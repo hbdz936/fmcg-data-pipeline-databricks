@@ -33,12 +33,17 @@ Raw CSV Files → Bronze (Raw) → Silver (Cleaned) → Gold (BI Ready)
 - Fact Table: Orders
 - Dimension Tables: Customers, Products, Gross Price, Date
 
-## Folder Structure
+## Folder Structures
 notebooks/
-├── setup/               → utilities and configuration
-├── dimension_processing/ → customers, products, gross price
-└── fact_processing/     → historical load + incremental load
-├── sample data/         → parent and child company sample data
+├── setup/ # utilities and configuration
+├── dimension_processing/ # customers, products, gross price
+│ ├── customer_data_processing
+│ ├── products_data_processing
+│ └── gross_price_data_processing
+├── fact_processing/ # historical + incremental load
+│ ├── fact_full_load
+│ └── fact_incremental_load
+└── sample_data/ # parent and child company sample data
 
 ## How to Run
 1. Create free Databricks account at databricks.com
