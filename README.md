@@ -36,7 +36,7 @@ Raw CSV Files → Bronze (Raw) → Silver (Cleaned) → Gold (BI Ready)
 ## Folder Structure
 
 ```text
-notebooks/
+complete_pipeline/
 ├── setup/
 ├── dimension_processing/
 │   ├── customer_data_processing
